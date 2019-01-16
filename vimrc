@@ -17,3 +17,17 @@ set hlsearch    " highlight search
 set ignorecase  " Do case in sensitive matching with
 set smartcase   " be sensitive when there's a capital letter
 set incsearch   " Search incrementally
+
+" set your own personal modifier key to something handy
+let mapleader = "," 
+
+" use ,v to make a new vertical split, ,s for horiz, ,x to close a split
+noremap <leader>v <c-w>v<c-w>l
+noremap <leader>s <c-w>s<c-w>j
+noremap <leader>x <c-w>c
+
+" use ctrl-h/j/k/l to switch between splits
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
