@@ -2,7 +2,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 colorscheme mysticaltutor
-autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
+set shiftwidth=2 
+set tabstop=2
 set expandtab
 set number
 set showmatch    " Show matching brackets.
