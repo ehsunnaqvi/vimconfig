@@ -1,7 +1,6 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-colorscheme mysticaltutor
 set shiftwidth=2 
 set tabstop=2
 set expandtab
