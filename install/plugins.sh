@@ -7,6 +7,8 @@ git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 git clone https://tpope.io/vim/unimpaired.git ~/.vim/bundle/unimpaired
 git clone https://tpope.io/vim/dadbod.git ~/.vim/bundle/dadbod
 git clone https://tpope.io/vim/dispatch.git ~/.vim/bundle/dispatch
+git clone https://github.com/tpope/vim-dotenv.git ~/.vim/bundle/dotenv
+git clone https://tpope.io/vim/surround.git ~/.vim/bundle/surround
 # Python plugins
 git clone --depth=1 https://github.com/vim-syntastic/syntastic.git ~/.vim/bundle/syntastic
 git clone --recursive https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
