@@ -1,9 +1,14 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-set shiftwidth=2 
-set tabstop=2
-set expandtab
+augroup python
+    autocmd!
+    autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab
+augroup END
+augroup ruby
+    autocmd!
+    autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab
+augroup END
 set number
 set showmatch    " Show matching brackets.
 set matchtime=5  " Bracket blinking.
