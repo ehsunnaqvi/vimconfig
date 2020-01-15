@@ -9,7 +9,7 @@ augroup ruby
     autocmd!
     autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab
 augroup END
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/  " Mark bad white space
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h, *.rb, *.erb match BadWhitespace /\s\+$/  " Mark bad white space
 set number
 set showmatch    " Show matching brackets.
 set matchtime=5  " Bracket blinking.
