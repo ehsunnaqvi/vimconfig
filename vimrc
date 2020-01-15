@@ -9,7 +9,6 @@ augroup ruby
     autocmd!
     autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab
 augroup END
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h, *.rb, *.erb match BadWhitespace /\s\+$/  " Mark bad white space
 set number
 set showmatch    " Show matching brackets.
 set matchtime=5  " Bracket blinking.
@@ -32,8 +31,18 @@ noremap <leader>v <c-w>v<c-w>l
 noremap <leader>s <c-w>s<c-w>j
 noremap <leader>x <c-w>c
 
+" map jk to esc
+inoremap jk <esc> 
+
 " use ctrl-h/j/k/l to switch between splits
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
+
+" syntastic airline configs
+let g:airline#extensions#syntastic#enabled = 1
+let airline#extensions#syntastic#error_symbol = 'E:'
+let airline#extensions#syntastic#stl_format_err = '%E{[%fe(#%e)]}'
+let airline#extensions#syntastic#warning_symbol = 'W:'
+let airline#extensions#syntastic#stl_format_warn = '%W{[%fw(#%w)]}'
