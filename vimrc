@@ -8,6 +8,7 @@ augroup END
 augroup ruby
     autocmd!
     autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab
+    autocmd FileType eruby setlocal tabstop=2 shiftwidth=2 expandtab
 augroup END
 set number
 set showmatch    " Show matching brackets.
